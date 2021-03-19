@@ -88,7 +88,7 @@ export default class ImageSwiper extends React.Component<IProps, IState> {
         ref={(ref) => (this.scrollViewRef = ref)}
         horizontal
         pagingEnabled
-        alwaysBounceHorizontal
+        bounces={false}
         onScroll={(e) => this.handleOnScroll(e)}
         scrollEventThrottle={5}
         contentContainerStyle={{
